@@ -1,1 +1,54 @@
+#Assignment no1: Sum of numbers using while loop.
+
+sum1=0
+while True:
+    num1 = int(input("Enter the number "))
+    sum1=sum1+num1
+    print(sum1)
+    if num1 == 0:
+     break
+
+print(" Final sum of n numbers is ",sum1)
+-->Output:
+ Enter the number 10
+10
+Enter the number 48
+58
+Enter the number 32
+90
+Enter the number 0
+90
+ Final sum of n numbers is  90
+***************************************************************************** 
+ #Assignment no2: Take a integer and find the number is Prime or not.
+ 
+ num1 = int(input("Enter the number: "))
+if num1>1:
+    for i in range(2,num1):
+        if num1 % i==0:
+            print(num1," is not a prime number")
+            break
+            
+    else:
+        print(num1," is a prime number")
+else:        
+    print(num1,"is not a prime number")
+    
+--> Output
+Enter the number: 7
+7  is a prime number
+
+or
+
+num = 13
+if num > 1:
+    for i in range(2, num//2):
+        if (num % i) == 0:
+            print(num, "is not a prime number")
+            break
+    else:
+        print(num, "is a prime number")
+else:
+    print(num, "is not a prime number")
+
 
